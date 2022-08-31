@@ -1,0 +1,10 @@
+:root {
+  --sans-serif: "Red Hat Display", sans-serif;
+  --fs-title: 1.3125rem;
+  --fs-text: 0.875rem;
+
+  @media (min-width: 43.75em) {
+    --fs-title: 1.75rem;
+    --fs-text: 1rem;
+  }
+}

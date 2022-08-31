@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 90%;
+  margin-inline: auto;
+  min-height: 100vh;
+  background-color: var(--Pale-blue);
+  background-image: url("../../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  @media (min-width: 43.75em) {
+    background-image: url("../../images/pattern-background-desktop.svg");
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  display: block;
+}

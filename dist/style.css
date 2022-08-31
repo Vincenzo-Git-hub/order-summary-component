@@ -1,0 +1,139 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: var(--Pale-blue);
+  background-image: url(../../images/pattern-background-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  margin-inline: auto;
+  min-height: 100vh;
+  place-content: center;
+  width: 90%;
+}
+@media (min-width: 43.75em) {
+  body {
+    background-image: url(../../images/pattern-background-desktop.svg);
+  }
+}
+img {
+  max-width: 100%;
+}
+a,
+img {
+  display: block;
+}
+:root {
+  --Pale-blue: #e0e8ff;
+  --Bright-blue: #3829e0;
+  --Very-pale-blue: #f5f7ff;
+  --Desaturated-blue: #7280a7;
+  --Dark-blue: #1f2f56;
+  --Gray: grey;
+  --White: #fff;
+}
+.flex {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.space {
+  flex-grow: 1;
+}
+:root {
+  --sans-serif: "Red Hat Display", sans-serif;
+  --fs-title: 1.3125rem;
+  --fs-text: 0.875rem;
+}
+@media (min-width: 43.75em) {
+  :root {
+    --fs-title: 1.75rem;
+    --fs-text: 1rem;
+  }
+}
+.container {
+  margin-inline: auto;
+  padding-block: 2rem;
+  width: 80%;
+}
+body {
+  font-family: var(--sans-serif);
+  font-size: var(--fs-text);
+}
+h1 {
+  font-weight: 900;
+}
+p {
+  font-weight: 500;
+  line-height: 1.5;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.bold {
+  font-weight: 700;
+}
+.light {
+  color: var(--Gray);
+}
+.card {
+  background-color: var(--White);
+  border-radius: 1rem;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.2);
+  max-width: 28.125rem;
+  overflow: hidden;
+  text-align: center;
+}
+.card__body {
+  margin-bottom: 1.5rem;
+}
+.card__title {
+  color: var(--Dark-blue);
+  font-size: var(--fs-title);
+  margin-bottom: 0.643em;
+}
+.card__price {
+  background-color: var(--Very-pale-blue);
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  padding: 1.25em;
+}
+.card__link {
+  color: var(--Bright-blue);
+  margin-left: 0.5em;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.card__link:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.card__button {
+  border-radius: 0.625rem;
+  font-weight: 700;
+  padding-block: 0.875em;
+}
+.card__button--primary {
+  background-color: var(--Bright-blue);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3);
+  color: var(--Very-pale-blue);
+  margin-bottom: 1rem;
+  transition: all 0.5s ease;
+}
+.card__button--primary:hover {
+  opacity: 0.7;
+}
+.card__button--secondary {
+  color: var(--Gray);
+  transition: all 0.5s ease;
+}
+.card__button--secondary:hover {
+  color: inherit;
+}
+/*# sourceMappingURL=style.css.map */

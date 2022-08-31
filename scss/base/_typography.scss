@@ -1,0 +1,29 @@
+@use "../util/" as *;
+
+body {
+  font-family: var(--sans-serif);
+  font-size: var(--fs-text);
+}
+
+h1 {
+  font-weight: 900;
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//to make bold the <p>Annual Plan</p>
+.bold {
+  font-weight: 700;
+}
+//to make the <p>$59.99/year</p> more light
+.light {
+  color: var(--Gray);
+}

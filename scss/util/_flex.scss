@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.space {
+  flex-grow: 1;
+}
